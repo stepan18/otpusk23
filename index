@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="margin: 0; background-size: 100vw 100vh; padding: 0;background-repeat: no-repeat; background-position: top center; background-attachment: fixed; background-image: url(https://drive.google.com/uc?export=view&id=1k9zmTq3kBdY0bjTwWQzAvXTHGQJC2g4-);">
+<head>
+    <meta charset="utf-8">
+    <title>Счётик дней до отпуска 23.06.2024</title>
+    <style>
+        *{
+            color: red;
+        }
+        #i-1, center{
+            font-size: 100px;
+        }
+        p{
+            font-size: 80px;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<p style="margin: 30% 0 0 15%;">4 рота суворовцев</p>
+<p style="margin: 0 0 0 40%;" id="i-1" ></p>
+<p style="margin: 0 0 0 20%;">Дней до краба</p>
+<p style="margin: 80% 0 0 0;"><center>"Один за всех и все за одного"</center></p>
+<script>
+    let a = new Date("2024-06-23")
+    let b = new Date()
+    let d = Math.floor((a.getTime() - b.getTime() - 9720000) / 86400000) + 1
+
+document.getElementById("i-1").innerHTML = d;
+</script>
+</body>
+</html>
